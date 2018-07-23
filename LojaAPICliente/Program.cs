@@ -13,8 +13,9 @@ namespace LojaAPICliente
         static void Main(string[] args)
         {
             string conteudo;
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://www.mocky.io/v2/52aaf5deee7ba8c70329fb7d");
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://localhost:57810/api/carrinho/1");
             request.Method = "GET";
+            request.Accept = "application/xml";
 
             WebResponse response = request.GetResponse();
 
